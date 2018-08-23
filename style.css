@@ -1,0 +1,346 @@
+/* Base */
+
+html,
+body {
+    font-family: Roboto;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+ul li, h2, ul{
+    list-style: none;
+    color: #000;
+
+}
+/* ul li{
+    margin-right: 2%;
+} */
+
+/* Header */
+
+.header {
+    /* position: fixed; */
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    line-height: 80px;
+    background-color: #4a78f7;
+}
+.header h1{
+    display: none;
+}
+
+.headerLogo {
+    padding: 0 25px;
+    float: left;
+}
+
+/* Menu */
+
+.menu {
+    float: left;
+    margin-top: 4.2rem;
+}
+
+.menu a {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+body>header>a:nth-child(1) {
+    display: none;
+}
+
+/* main */
+
+.contenu {
+    /* padding-top:  130px; */
+    display: flex;
+    width: 80%;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    margin: auto;
+    
+}
+
+.baseline {
+    
+    color: rgb(255, 255, 255);
+    background: url(img/aerial.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+}
+
+.baseline h1 {
+    font-size: 1.4rem;
+    padding-top: 180px;
+    text-shadow: #000 2px 2px;
+}
+
+.baseline p  {
+    margin: 5rem 0;
+    color: #000;
+}
+
+
+.boutton {
+    background-image: url(img/circuit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 150px;
+    color: #ffffff;
+    justify-content: center;
+    margin:10rem 0;
+}
+
+.boutton a {
+    margin-top: -20px;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: #fa4549;
+    width: 170px;
+    height: 35px;
+    padding-top: 12px;
+    box-shadow: #000 0px 4px 8px;
+    transition-delay: 0.5s ease;
+    transition-duration: 0.5s;
+}
+
+.boutton a:hover {
+    background-color: #fa454885;
+}
+
+.boutton a:hover {
+    color: #000
+}
+
+
+
+/* Footer */
+
+.navFooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: none;
+}
+
+.navFooter ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navFooter li {
+    margin: auto;
+    border-right: rgba(0, 0, 0, 0.3) solid;
+    border-left: rgba(0, 0, 0, 0.3) solid;
+    padding: 0 15px;
+     
+}
+/* Page process */
+.process{
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/presta.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.process h2{
+    margin: 6rem 0 0 8rem;
+    align-self: flex-start; 
+    color: #fff;
+    font-size: 6rem;
+}
+.process h3{
+    font-size: 1.4rem;
+}
+.process p{
+    width: 80%;
+    margin: 1.4rem auto;
+}
+ .process p:last-child{
+    margin-bottom: 8rem;
+} 
+/*Page kiosque*/
+article{
+    
+    margin: 50px auto;
+    padding: 15px 0;
+    display: flex;
+    width: 70%;
+    
+    background-color: rgba(110, 198, 255, 0.3);
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+article header{
+    width: calc(65% - 30px);
+    padding: 15px;
+}
+article span{
+    width: 35%;
+}
+article span img{
+    max-width:100%;
+    height: auto;
+}
+
+/*page produits*/
+.produit{
+    background: #6EC6FF;
+    width: 80%;
+    margin: 10px auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.produit:last-of-type{
+    margin-bottom: 70px;
+}
+.produit span{
+    width: 80%;
+    margin-top: 20px;
+    background: #fff;
+}
+.produit span img{
+    max-width: 100%;
+    height: auto;
+}
+.descriptionProduits{
+    display: none;
+    background: rgb(168, 238, 255);
+}
+.show{
+    display: block;
+}
+.descriptionProduits ul{
+    padding: 0;
+}
+/* Responsive */
+
+@media only screen and (max-width: 730px) {
+    
+    .contenu{
+        width: 100%;
+    }
+    .header {
+        background-color: rgb(74, 120, 247);
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .headerLogo {
+        margin: auto;
+        float: none;
+    }
+    .headerLogo img {
+        width: 170px;
+        height: 94px;
+        padding-right: 1rem;
+    }
+    .headerIcon {
+        width: 15px;
+    }
+    /* boutton */
+    body>header>a:nth-child(1) {
+        display: block;
+        width: 60px;
+        height: 125px;
+        cursor: pointer;
+        background-image: url(img/button.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 1px;
+    }
+    /* body>header>a:nth-child(1)::after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 1.2rem;
+        height: 0;
+        top: 48px;
+        right: -23px;
+        box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    } */
+    .menu {
+        width: 100%;
+        background-color: rgb(45, 45, 99);
+        transition-delay: 2s;
+        transition-duration: 0.2s;
+        display: none;
+        margin-top: 0;
+    }
+    .withSidebar .menu {
+        display: block;
+        z-index: 990;
+    }
+    .menu a {
+        display: block;
+        text-align: center;
+        height: 80px;
+        line-height: 80px;
+        border-bottom: 1px solid #000;
+        color: #fff;
+    }
+    .process{
+        background-size: 100% 10rem;
+    }
+    .process h2{
+        margin: 10% 0;
+        align-self: center;
+        font-size: 4rem;
+    }
+    article{
+        width: 100%;
+    }
+    article header{
+        width: 100%;
+        order: 2;
+    }
+    article span {
+        width: 100%;
+        order:1;
+    }
+    article span img{
+        width: 80%;
+    }
+    #navFooter{
+        
+        display: block;
+    }
+}
+
